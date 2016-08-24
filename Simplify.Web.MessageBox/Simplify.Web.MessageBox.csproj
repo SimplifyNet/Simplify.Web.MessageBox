@@ -71,6 +71,12 @@
   <ItemGroup>
     <None Include="packages.config" />
     <None Include="Simplify.Web.MessageBox.nuspec" />
+    <None Include="Templates\ErrorMessageBox.tpl" />
+    <None Include="Templates\InfoMessageBox.tpl" />
+    <None Include="Templates\InlineErrorMessageBox.tpl" />
+    <None Include="Templates\InlineInfoMessageBox.tpl" />
+    <None Include="Templates\InlineOkMessageBox.tpl" />
+    <None Include="Templates\OkMessageBox.tpl" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
