@@ -23,7 +23,7 @@ namespace Simplify.Web.MessageBox
 		/// <summary>
 		/// The message box templates path
 		/// </summary>
-		public const string MessageBoxTemplatesPath = "Simplify.Web/MessageBox/";
+		public const string MessageBoxTemplatesPath = "Templates/App_Packages/Simplify.Web.MessageBox/";
 
 		private readonly ITemplateFactory _templateFactory;
 		private readonly IStringTable _stringTable;

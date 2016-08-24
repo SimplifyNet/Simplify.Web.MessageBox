@@ -17,11 +17,11 @@
 		<tags>Simplify.Web</tags>
 	</metadata>
 	<files>
-		<file src="Templates/ErrorMessageBox.tpl" target="Templates/App_Packages/Simplify.Web.MessageBox/ErrorMessageBox.tpl" />
-		<file src="Templates/InfoMessageBox.tpl" target="Templates/App_Packages/Simplify.Web.MessageBox/InfoMessageBox.tpl" />
-		<file src="Templates/InlineErrorMessageBox.tpl" target="Templates/App_Packages/Simplify.Web.MessageBox/InlineErrorMessageBox.tpl" />
-		<file src="Templates/InlineInfoMessageBox.tpl" target="Templates/App_Packages/Simplify.Web.MessageBox/InlineInfoMessageBox.tpl" />
-		<file src="Templates/InlineOkMessageBox.tpl" target="Templates/App_Packages/Simplify.Web.MessageBox/InlineOkMessageBox.tpl" />
-		<file src="Templates/OkMessageBox.tpl" target="Templates/App_Packages/Simplify.Web.MessageBox/OkMessageBox.tpl" />
+		<file src="Templates/App_Packages/Simplify.Web.MessageBox/ErrorMessageBox.tpl" target="Templates/App_Packages/Simplify.Web.MessageBox/ErrorMessageBox.tpl" />
+		<file src="Templates/App_Packages/Simplify.Web.MessageBox/InfoMessageBox.tpl" target="Templates/App_Packages/Simplify.Web.MessageBox/InfoMessageBox.tpl" />
+		<file src="Templates/App_Packages/Simplify.Web.MessageBox/InlineErrorMessageBox.tpl" target="Templates/App_Packages/Simplify.Web.MessageBox/InlineErrorMessageBox.tpl" />
+		<file src="Templates/App_Packages/Simplify.Web.MessageBox/InlineInfoMessageBox.tpl" target="Templates/App_Packages/Simplify.Web.MessageBox/InlineInfoMessageBox.tpl" />
+		<file src="Templates/App_Packages/Simplify.Web.MessageBox/InlineOkMessageBox.tpl" target="Templates/App_Packages/Simplify.Web.MessageBox/InlineOkMessageBox.tpl" />
+		<file src="Templates/App_Packages/Simplify.Web.MessageBox/OkMessageBox.tpl" target="Templates/App_Packages/Simplify.Web.MessageBox/OkMessageBox.tpl" />
 	</files>
 </package>
