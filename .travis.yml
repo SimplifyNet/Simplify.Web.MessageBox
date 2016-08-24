@@ -1,0 +1,13 @@
+branches:
+ only:
+  - develop
+  - master
+
+git:
+ depth: 1
+
+language: csharp
+solution: Simplify.Web.MessageBox.sln
+
+script:
+ - xbuild /p:Platform="Any CPU" /p:Configuration=Release Simplify.Web.MessageBox.sln /tv:12.0
