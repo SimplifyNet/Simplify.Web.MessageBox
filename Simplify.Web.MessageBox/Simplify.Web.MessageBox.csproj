@@ -33,7 +33,12 @@
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="IMessageBoxHandler.cs" />
+    <Compile Include="MessageBoxHandler.cs" />
+    <Compile Include="MessageBoxStatus.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Responses\MessageBox.cs" />
+    <Compile Include="Responses\MessageBoxInline.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
@@ -67,9 +72,7 @@
     <None Include="packages.config" />
     <None Include="Simplify.Web.MessageBox.nuspec" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Responses\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
