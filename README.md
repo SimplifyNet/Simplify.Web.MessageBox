@@ -13,4 +13,4 @@ Simplify.Web.MessageBox
 
 | | **.NET (4.5.2)** | **Mono (Latest)** |
 | :------ | :------ | :------: |
-| **master** | [![AppVeyor Build status](https://ci.appveyor.com/api/projects/status/2h8jh563pwsf283i/branch/master?svg=true)](https://ci.appveyor.com/project/i4004/simplify-web-message-box/branch/master) | [![Travis Build Status](https://travis-ci.org/i4004/Simplify.Web.MessageBox.svg?branch=master)](https://travis-ci.org/i4004/Simplify.Web.MessageBox) |
+| **master** | [![AppVeyor Build status](https://ci.appveyor.com/api/projects/status/2h8jh563pwsf283i/branch/master?svg=true)](https://ci.appveyor.com/project/i4004/simplify-web-messagebox/branch/master) | [![Travis Build Status](https://travis-ci.org/i4004/Simplify.Web.MessageBox.svg?branch=master)](https://travis-ci.org/i4004/Simplify.Web.MessageBox) |
