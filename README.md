@@ -5,7 +5,7 @@ Simplify.Web.MessageBox
 
 ## Package status
 
-| Latest version | [![Nuget version](http://img.shields.io/badge/nuget-v1-blue.png)](https://www.nuget.org/packages/Simplify.Web.MessageBox/) |
+| Latest version | [![Nuget version](http://img.shields.io/badge/nuget-v1.1-blue.png)](https://www.nuget.org/packages/Simplify.Web.MessageBox/) |
 | :------ | :------: |
 | **Dependencies** | [![NuGet Status](http://nugetstatus.com/Simplify.Web.MessageBox.png)](http://nugetstatus.com/packages/Simplify.Web.MessageBox) |
 
