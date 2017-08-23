@@ -11,7 +11,7 @@
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description>$description$</description>
 		<summary>$description$</summary>
-		<releaseNotes>+ MessageBox constructors with HTTP status code</releaseNotes>
+		<releaseNotes>* Upgrade to Simplify.Web 1.2</releaseNotes>
 		<copyright>Licensed under LGPL</copyright>
 		<language>en-US</language>
 		<tags>Simplify.Web</tags>
