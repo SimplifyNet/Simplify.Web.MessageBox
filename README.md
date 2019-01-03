@@ -4,28 +4,30 @@
 
 ## Package status
 
-| Latest version | [![Nuget version](http://img.shields.io/badge/nuget-v1.1.2-blue.png)](https://www.nuget.org/packages/Simplify.Web.MessageBox/) |
+| Latest version | [![Nuget version](http://img.shields.io/badge/nuget-v1.2-blue.png)](https://www.nuget.org/packages/Simplify.Web.MessageBox/) |
 | :------ | :------: |
 | **Dependencies** | [![NuGet Status](http://nugetstatus.com/Simplify.Web.MessageBox.png)](http://nugetstatus.com/packages/Simplify.Web.MessageBox) |
+| **Target Frameworks** | 4.6.2, Standard 2.0 |
 
 ## Build status
 
-| Branch | **.NET (4.5.2)** |
+| Branch | Status |
 | :------ | :------ |
 | **master** | [![AppVeyor Build status](https://ci.appveyor.com/api/projects/status/2h8jh563pwsf283i/branch/master?svg=true)](https://ci.appveyor.com/project/i4004/simplify-web-messagebox/branch/master) |
 
-# Examples
+## Examples
 
-## Setup message box templates
+### Setup message box templates
 
 There are different template file for different message box statuses.
 Inline templates intended to use as API responses but stylized with HTML.
 
 ![Template files](https://raw.githubusercontent.com/i4004/Simplify.Web.MessageBox/master/images/template-files.png)
 
-## Displaying message box
+### Displaying message box
 
-### Default message box which will be added to 'MainContent' variable
+#### Default message box which will be added to 'MainContent' variable
+
 ```csharp
 public class MyController : Controller
 {
@@ -35,7 +37,8 @@ public class MyController : Controller
 	}
 }
 ```
-### Inline message box
+
+#### Inline message box
 
 Framework execution will be stopped, message box will be returned to client without rest of the website content
 ```csharp
