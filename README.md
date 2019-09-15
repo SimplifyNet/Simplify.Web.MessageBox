@@ -6,7 +6,7 @@
 
 | Latest version | [![Nuget version](http://img.shields.io/badge/nuget-v1.2-blue.png)](https://www.nuget.org/packages/Simplify.Web.MessageBox/) |
 | :------ | :------: |
-| **Dependencies** | [![NuGet Status](http://nugetstatus.com/Simplify.Web.MessageBox.png)](http://nugetstatus.com/packages/Simplify.Web.MessageBox) |
+| **Dependencies** | [![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/nuget/Simplify.Web.MessageBox.svg)](https://libraries.io/nuget/Simplify.Web.MessageBox) |
 | **Target Frameworks** | 4.6.2, Standard 2.0 |
 
 ## Build status
