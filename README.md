@@ -1,6 +1,6 @@
 # Simplify.Web.MessageBox
 
-`Simplify.Web.MessageBox` is a package which provides non-interactive server side message box for [Simplify.Web](https://github.com/i4004/Simplify.Web) web-framework.
+`Simplify.Web.MessageBox` is a package which provides non-interactive server side message box for [Simplify.Web](https://github.com/SimplifyNet/Simplify.Web) web-framework.
 
 ## Package status
 
@@ -22,7 +22,7 @@
 There are different template file for different message box statuses.
 Inline templates intended to use as API responses but stylized with HTML.
 
-![Template files](https://raw.githubusercontent.com/i4004/Simplify.Web.MessageBox/master/images/template-files.png)
+![Template files](https://raw.githubusercontent.com/SimplifyNet/Simplify.Web.MessageBox/master/images/template-files.png)
 
 ### Displaying message box
 
