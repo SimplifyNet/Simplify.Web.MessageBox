@@ -5,20 +5,18 @@
 		<Product>Simplify</Product>
 		<Description>Simplify.Web static message box templates and controller response</Description>
 		<Copyright>Licensed under LGPL</Copyright>
-		<Version>1.2</Version>
+		<Version>1.2.1</Version>
 		<PackageProjectUrl>https://github.com/i4004/Simplify.Web.MessageBox</PackageProjectUrl>
 		<PackageIconUrl>https://raw.githubusercontent.com/i4004/Simplify.Web/master/Images/Icon.png</PackageIconUrl>
 		<RepositoryUrl>https://github.com/i4004/Simplify.Web.MessageBox</RepositoryUrl>
 		<RepositoryType>GIT</RepositoryType>
 		<PackageTags>Simplify.Web</PackageTags>
 		<PackageReleaseNotes>
-			* Upgrade to Simplify.Web 2.0
-			* .NET Standard 2.0 support added
-			* .NET 4.5.2 version upgrade to .NET 4.6.2
+			Updates
+			* Upgrade to Simplify.Web 2.3
 		</PackageReleaseNotes>
 		<OutputPath>bin\Any CPU\$(Configuration)\</OutputPath>
 		<DocumentationFile>bin\Any CPU\$(Configuration)\$(TargetFramework)\Simplify.Web.MessageBox.xml</DocumentationFile>
-		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 	</PropertyGroup>
 	<ItemGroup>
 		<Content Include="Templates\App_Packages\Simplify.Web.MessageBox\ErrorMessageBox.tpl" />
@@ -29,6 +27,6 @@
 		<Content Include="Templates\App_Packages\Simplify.Web.MessageBox\OkMessageBox.tpl" />
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="Simplify.Web" Version="2.0.0" />
+		<PackageReference Include="Simplify.Web" Version="2.3.0" />
 	</ItemGroup>
 </Project>
