@@ -6,9 +6,9 @@
 		<Description>Simplify.Web static message box templates and controller response</Description>
 		<Copyright>Licensed under LGPL</Copyright>
 		<Version>1.2.1</Version>
-		<PackageProjectUrl>https://github.com/i4004/Simplify.Web.MessageBox</PackageProjectUrl>
-		<PackageIconUrl>https://raw.githubusercontent.com/i4004/Simplify.Web/master/Images/Icon.png</PackageIconUrl>
-		<RepositoryUrl>https://github.com/i4004/Simplify.Web.MessageBox</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/SimplifyNet/Simplify.Web.MessageBox</PackageProjectUrl>
+		<PackageIconUrl>https://raw.githubusercontent.com/SimplifyNet/Images/master/LogoWeb32x32.png</PackageIconUrl>
+		<RepositoryUrl>https://github.com/SimplifyNet/Simplify.Web.MessageBox</RepositoryUrl>
 		<RepositoryType>GIT</RepositoryType>
 		<PackageTags>Simplify.Web</PackageTags>
 		<PackageReleaseNotes>
