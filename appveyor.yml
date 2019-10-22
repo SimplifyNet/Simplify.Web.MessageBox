@@ -1,11 +1,6 @@
-version: '{build}'
+version: "{build}"
 
-image: Visual Studio 2017
-
-branches:
-  only:
-  - master
-  - develop
+image: Visual Studio 2019
 
 skip_tags: true
 clone_depth: 1
@@ -14,7 +9,7 @@ configuration: Release
 platform: Any CPU
 
 before_build:
-- cmd: '".nuget/NuGet.exe" restore Simplify.Web.MessageBox.sln'
+  - nuget restore
 
 build:
   publish_nuget: true
