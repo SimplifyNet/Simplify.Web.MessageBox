@@ -17,7 +17,7 @@ namespace Simplify.Web.MessageBox
 	/// "Message"
 	/// "Title"
 	/// </summary>
-	public interface IMessageBoxHandler
+	public interface IMessageBoxHandler : IHideObjectMembers
 	{
 		/// <summary>
 		/// Generate message box HTML and set to data collector
