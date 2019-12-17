@@ -1,4 +1,6 @@
-﻿namespace Simplify.Web.MessageBox.Responses
+﻿using System.Threading.Tasks;
+
+namespace Simplify.Web.MessageBox.Responses
 {
 	/// <summary>
 	/// Provides inline message box response (generate inline message box and sends it to the user only, without site generation)
@@ -36,11 +38,11 @@
 		/// Processes this response
 		/// </summary>
 		/// <returns></returns>
-		public override ControllerResponseResult Process()
+		public override async Task<ControllerResponseResult> Process()
 		{
 			var handler = new MessageBoxHandler(TemplateFactory, StringTableManager, DataCollector);
 
-			ResponseWriter.Write(handler.GetInline(Text, Status), Context.Response);
+			await ResponseWriter.WriteAsync(handler.GetInline(Text, Status), Context.Response);
 
 			return ControllerResponseResult.RawOutput;
 		}
