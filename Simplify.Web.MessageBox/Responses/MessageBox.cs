@@ -1,4 +1,6 @@
-﻿namespace Simplify.Web.MessageBox.Responses
+﻿using System.Threading.Tasks;
+
+namespace Simplify.Web.MessageBox.Responses
 {
 	/// <summary>
 	/// Provides message box response (generate message box and puts it to the data collector)
@@ -69,7 +71,7 @@
 		/// Processes this response
 		/// </summary>
 		/// <returns></returns>
-		public override ControllerResponseResult Process()
+		public override Task<ControllerResponseResult> Process()
 		{
 			Context.Response.StatusCode = StatusCode;
 
@@ -77,7 +79,7 @@
 
 			handler.Show(Text, Status, Title);
 
-			return ControllerResponseResult.Default;
+			return Task.FromResult(ControllerResponseResult.Default);
 		}
 	}
 }
