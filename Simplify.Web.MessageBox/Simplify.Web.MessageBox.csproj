@@ -5,7 +5,7 @@
 		<Product>Simplify</Product>
 		<Description>Simplify.Web static message box templates and controller response</Description>
 		<Copyright>Licensed under LGPL</Copyright>
-		<Version>1.4-pre01</Version>
+		<Version>1.4</Version>
 		<PackageProjectUrl>https://github.com/SimplifyNet/Simplify.Web.MessageBox</PackageProjectUrl>
 		<PackageIconUrl>https://raw.githubusercontent.com/SimplifyNet/Images/master/LogoWeb32x32.png</PackageIconUrl>
 		<RepositoryUrl>https://github.com/SimplifyNet/Simplify.Web.MessageBox</RepositoryUrl>
@@ -27,6 +27,6 @@
 		<Content Include="Templates\App_Packages\Simplify.Web.MessageBox\OkMessageBox.tpl" />
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="Simplify.Web" Version="4.0.0-pre01" />
+		<PackageReference Include="Simplify.Web" Version="4.0.0" />
 	</ItemGroup>
 </Project>
