@@ -27,6 +27,6 @@
 		<Content Include="Templates\App_Packages\Simplify.Web.MessageBox\OkMessageBox.tpl" />
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="Simplify.Web" Version="4.1.1" />
+		<PackageReference Include="Simplify.Web" Version="4.1.*" />
 	</ItemGroup>
 </Project>
