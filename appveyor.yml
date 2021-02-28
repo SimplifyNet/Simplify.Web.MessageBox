@@ -13,5 +13,6 @@ before_build:
 
 build:
   publish_nuget: true
+  use_snupkg_format: true
   parallel: true
   verbosity: minimal
