@@ -1,22 +1,24 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<TargetFrameworks>netstandard2.0;net462</TargetFrameworks>
+		<OutputPath>bin\Any CPU\$(Configuration)\</OutputPath>
+		<DocumentationFile>bin\Any CPU\$(Configuration)\$(TargetFramework)\Simplify.Web.MessageBox.xml</DocumentationFile>
+
+		<Version>1.4.2</Version>
+		<PackageReleaseNotes>
+			Updates
+			* Upgrade to Simplify.Web 4.2.3
+		</PackageReleaseNotes>
+
 		<Authors>Alexander Krylkov</Authors>
 		<Product>Simplify</Product>
 		<Description>Simplify.Web static message box templates and controller response</Description>
 		<Copyright>Licensed under LGPL</Copyright>
-		<Version>1.4.1</Version>
 		<PackageProjectUrl>https://github.com/SimplifyNet/Simplify.Web.MessageBox</PackageProjectUrl>
 		<PackageIconUrl>https://raw.githubusercontent.com/SimplifyNet/Images/master/LogoWeb32x32.png</PackageIconUrl>
 		<RepositoryUrl>https://github.com/SimplifyNet/Simplify.Web.MessageBox</RepositoryUrl>
 		<RepositoryType>GIT</RepositoryType>
 		<PackageTags>Simplify.Web</PackageTags>
-		<PackageReleaseNotes>
-			Updates
-			* Upgrade to Simplify.Web 4.1.1
-		</PackageReleaseNotes>
-		<OutputPath>bin\Any CPU\$(Configuration)\</OutputPath>
-		<DocumentationFile>bin\Any CPU\$(Configuration)\$(TargetFramework)\Simplify.Web.MessageBox.xml</DocumentationFile>
 	</PropertyGroup>
 	<ItemGroup>
 		<Content Include="Templates\App_Packages\Simplify.Web.MessageBox\ErrorMessageBox.tpl" />
