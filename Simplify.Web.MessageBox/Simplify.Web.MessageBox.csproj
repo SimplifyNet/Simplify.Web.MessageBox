@@ -4,7 +4,7 @@
 		<IncludeSymbols>true</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 		<OutputPath>bin\Any CPU\$(Configuration)\</OutputPath>
-		<DocumentationFile>bin\Any CPU\$(Configuration)\$(TargetFramework)\Simplify.Web.MessageBox.xml</DocumentationFile>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 
 		<Version>1.4.2</Version>
 		<PackageReleaseNotes>
@@ -17,7 +17,7 @@
 		<Description>Simplify.Web static message box templates and controller response</Description>
 		<Copyright>Licensed under LGPL</Copyright>
 		<PackageProjectUrl>https://github.com/SimplifyNet/Simplify.Web.MessageBox</PackageProjectUrl>
-		<PackageIconUrl>https://raw.githubusercontent.com/SimplifyNet/Images/master/LogoWeb32x32.png</PackageIconUrl>
+		<PackageIcon>icon.png</PackageIcon>
 		<RepositoryUrl>https://github.com/SimplifyNet/Simplify.Web.MessageBox</RepositoryUrl>
 		<RepositoryType>GIT</RepositoryType>
 		<PackageTags>Simplify.Web</PackageTags>
@@ -32,5 +32,8 @@
 	</ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="Simplify.Web" Version="4.2.*" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="..\..\images\icon.png" Pack="true" Visible="false" PackagePath="" />
 	</ItemGroup>
 </Project>
