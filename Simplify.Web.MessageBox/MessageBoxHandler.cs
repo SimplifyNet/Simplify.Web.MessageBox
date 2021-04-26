@@ -48,7 +48,7 @@ namespace Simplify.Web.MessageBox
 		/// <param name="text">Text of a message box</param>
 		/// <param name="status">Status of a message box</param>
 		/// <param name="title">Title of a message box</param>
-		public void Show(string text, MessageBoxStatus status = MessageBoxStatus.Error, string title = null)
+		public void Show(string? text, MessageBoxStatus status = MessageBoxStatus.Error, string? title = null)
 		{
 			if (string.IsNullOrEmpty(text))
 				throw new ArgumentNullException(nameof(text));
@@ -85,10 +85,8 @@ namespace Simplify.Web.MessageBox
 		/// <param name="stringTableItemName">Show message from string table item</param>
 		/// <param name="status">Status of a message box</param>
 		/// <param name="title">Title of a message box</param>
-		public void ShowSt(string stringTableItemName, MessageBoxStatus status = MessageBoxStatus.Error, string title = null)
-		{
+		public void ShowSt(string stringTableItemName, MessageBoxStatus status = MessageBoxStatus.Error, string? title = null) =>
 			Show(_stringTable.GetItem(stringTableItemName), status, title);
-		}
 
 		/// <summary>
 		/// Get inline message box HTML
@@ -96,7 +94,7 @@ namespace Simplify.Web.MessageBox
 		/// <param name="text">Text of a message box</param>
 		/// <param name="status">Status of a message box</param>
 		/// <returns>Message box html</returns>
-		public string GetInline(string text, MessageBoxStatus status = MessageBoxStatus.Error)
+		public string GetInline(string? text, MessageBoxStatus status = MessageBoxStatus.Error)
 		{
 			if (string.IsNullOrEmpty(text))
 				throw new ArgumentNullException(nameof(text));
@@ -131,9 +129,7 @@ namespace Simplify.Web.MessageBox
 		/// <param name="stringTableItemName">Show message from string table item</param>
 		/// <param name="status">Status of a message box</param>
 		/// <returns>Message box html</returns>
-		public string GetInlineSt(string stringTableItemName, MessageBoxStatus status = MessageBoxStatus.Error)
-		{
-			return GetInline(_stringTable.GetItem(stringTableItemName), status);
-		}
+		public string GetInlineSt(string stringTableItemName, MessageBoxStatus status = MessageBoxStatus.Error) =>
+			GetInline(_stringTable.GetItem(stringTableItemName), status);
 	}
 }

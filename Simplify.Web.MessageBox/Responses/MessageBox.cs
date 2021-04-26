@@ -14,7 +14,7 @@ namespace Simplify.Web.MessageBox.Responses
 		/// <param name="status">The message box status.</param>
 		/// <param name="statusCode">The HTTP response status code.</param>
 		/// <param name="title">The title.</param>
-		public MessageBox(string text, MessageBoxStatus status = MessageBoxStatus.Error, int statusCode = 200, string title = null)
+		public MessageBox(string text, MessageBoxStatus status = MessageBoxStatus.Error, int statusCode = 200, string? title = null)
 		{
 			Text = text;
 			Status = status;
@@ -65,7 +65,7 @@ namespace Simplify.Web.MessageBox.Responses
 		/// <value>
 		/// The title.
 		/// </value>
-		public string Title { get; }
+		public string? Title { get; }
 
 		/// <summary>
 		/// Processes this response
