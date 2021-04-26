@@ -20,7 +20,7 @@
 		<RepositoryType>GIT</RepositoryType>
 		<PackageTags>Simplify.Web</PackageTags>
 
-		<PackageReleaseNotes>See https://github.com/SimplifyNet/Simplify.Web.MessageBox/tree/master/src/Simplify.Web.MessageBox/CHANGELOG.md for details</PackageReleaseNotes>
+		<PackageReleaseNotes>See https://github.com/SimplifyNet/Simplify.Web.MessageBox/blob/master/Simplify.Web.MessageBox/CHANGELOG.md for details</PackageReleaseNotes>
 	</PropertyGroup>
 	<ItemGroup>
 		<Content Include="Templates\App_Packages\Simplify.Web.MessageBox\ErrorMessageBox.tpl" />
