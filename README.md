@@ -6,7 +6,6 @@
 [![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/nuget/Simplify.Web.MessageBox)](https://libraries.io/nuget/Simplify.Web.MessageBox)
 [![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/SimplifyNet/Simplify.Web.MessageBox)](https://www.codefactor.io/repository/github/simplifynet/simplify.web.MessageBox)
 ![Platform](https://img.shields.io/badge/platform-NET%205.0%20%7C%20.NET%20Standard%202.0%20%7C%20.NET%204.6.2-lightgrey)
-[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=SimplifyNet/Simplify.Web.MessageBox)](https://dependabot.com)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](http://makeapullrequest.com)
 
 `Simplify.Web.MessageBox` is a package which provides non-interactive server side message box for [Simplify.Web](https://github.com/SimplifyNet/Simplify.Web) web-framework.
