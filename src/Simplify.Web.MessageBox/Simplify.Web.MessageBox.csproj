@@ -1,14 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFrameworks>net5.0;netstandard2.0;net462</TargetFrameworks>
-		<LangVersion>9.0</LangVersion>
+		<TargetFrameworks>net6.0;net5.0;netstandard2.0;net462</TargetFrameworks>
+		<LangVersion>latest</LangVersion>
 		<Nullable>enable</Nullable>
 		<IncludeSymbols>true</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
-		<OutputPath>bin\Any CPU\$(Configuration)\</OutputPath>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 
-		<Version>1.4.4</Version>
+		<Version>1.4.5</Version>
 
 		<Authors>Alexander Krylkov</Authors>
 		<Product>Simplify</Product>
@@ -31,7 +30,7 @@
 		<Content Include="Templates\App_Packages\Simplify.Web.MessageBox\OkMessageBox.tpl" />
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="Simplify.Web" Version="4.6.*" />
+		<PackageReference Include="Simplify.Web" Version="4.6.0" />
 	</ItemGroup>
 	<ItemGroup>
 		<None Include="..\..\images\icon.png" Pack="true" Visible="false" PackagePath="" />

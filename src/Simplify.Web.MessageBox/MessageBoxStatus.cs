@@ -1,23 +1,22 @@
-﻿namespace Simplify.Web.MessageBox
+﻿namespace Simplify.Web.MessageBox;
+
+/// <summary>
+/// MessageBox status
+/// </summary>
+public enum MessageBoxStatus
 {
 	/// <summary>
-	/// MessageBox status
+	/// The information status
 	/// </summary>
-	public enum MessageBoxStatus
-	{
-		/// <summary>
-		/// The information status
-		/// </summary>
-		Information = 0,
+	Information = 0,
 
-		/// <summary>
-		/// The error status
-		/// </summary>
-		Error = 1,
+	/// <summary>
+	/// The error status
+	/// </summary>
+	Error = 1,
 
-		/// <summary>
-		/// The OK status
-		/// </summary>
-		Ok = 2
-	}
+	/// <summary>
+	/// The OK status
+	/// </summary>
+	Ok = 2
 }
