@@ -36,7 +36,4 @@
 		<None Include="..\..\images\icon.png" Pack="true" Visible="false" PackagePath="" />
 		<None Include="CHANGELOG.md" Pack="true" PackagePath="\" />
 	</ItemGroup>
-	<ItemGroup>
-		<None Include="..\images\icon.png" Pack="true" Visible="false" PackagePath="" />
-	</ItemGroup>
 </Project>
