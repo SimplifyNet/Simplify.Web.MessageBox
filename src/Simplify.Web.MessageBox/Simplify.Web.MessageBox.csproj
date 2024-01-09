@@ -30,7 +30,7 @@
 		<Content Include="Templates\App_Packages\Simplify.Web.MessageBox\OkMessageBox.tpl" />
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="Simplify.Web" Version="4.7.0" />
+		<PackageReference Include="Simplify.Web" Version="4.9.0" />
 	</ItemGroup>
 	<ItemGroup>
 		<None Include="..\..\images\icon.png" Pack="true" Visible="false" PackagePath="" />
