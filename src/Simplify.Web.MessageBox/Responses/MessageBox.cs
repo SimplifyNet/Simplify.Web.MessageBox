@@ -3,8 +3,9 @@
 namespace Simplify.Web.MessageBox.Responses;
 
 /// <summary>
-/// Provides message box response (generate message box and puts it to the data collector)
+/// Provides message box response (generate message box and puts it to the data collector).
 /// </summary>
+/// <seealso cref="ControllerResponse" />
 public class MessageBox : ControllerResponse
 {
 	/// <summary>

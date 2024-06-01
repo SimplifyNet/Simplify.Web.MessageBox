@@ -1,7 +1,7 @@
 ﻿namespace Simplify.Web.MessageBox;
 
 /// <summary>
-/// MessageBox status
+/// Provides the MessageBox status.
 /// </summary>
 public enum MessageBoxStatus
 {

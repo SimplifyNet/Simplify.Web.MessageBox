@@ -4,7 +4,7 @@ using Simplify.Web.Modules.Data;
 namespace Simplify.Web.MessageBox;
 
 /// <summary>
-/// The HTML message box
+/// Provides the HTML message box.
 /// Usable template files:
 /// "Simplify.Web/MessageBox/InfoMessageBox.tpl"
 /// "Simplify.Web/MessageBox/ErrorMessageBox.tpl"
@@ -12,35 +12,25 @@ namespace Simplify.Web.MessageBox;
 /// "Simplify.Web/MessageBox/InlineInfoMessageBox.tpl"
 /// "Simplify.Web/MessageBox/InlineErrorMessageBox.tpl"
 /// "Simplify.Web/MessageBox/InlineOkMessageBox.tpl"
-/// Usable <see cref="StringTable"/> items:
+/// Usable <see cref="StringTable" /> items:
 /// "FormTitleMessageBox"
 /// Template variables:
 /// "Message"
 /// "Title"
 /// </summary>
-public sealed class MessageBoxHandler : IMessageBoxHandler
+/// <seealso cref="IMessageBoxHandler" />
+/// <remarks>
+/// Initializes a new instance of the <see cref="MessageBoxHandler" /> class.
+/// </remarks>
+/// <param name="templateFactory">The template factory.</param>
+/// <param name="stringTable">The string table.</param>
+/// <param name="dataCollector">The data collector.</param>
+public sealed class MessageBoxHandler(ITemplateFactory templateFactory, IStringTable stringTable, IDataCollector dataCollector) : IMessageBoxHandler
 {
 	/// <summary>
 	/// The message box templates path
 	/// </summary>
 	public const string MessageBoxTemplatesPath = "App_Packages/Simplify.Web.MessageBox/";
-
-	private readonly ITemplateFactory _templateFactory;
-	private readonly IStringTable _stringTable;
-	private readonly IDataCollector _dataCollector;
-
-	/// <summary>
-	/// Initializes a new instance of the <see cref="MessageBoxHandler"/> class.
-	/// </summary>
-	/// <param name="templateFactory">The template factory.</param>
-	/// <param name="stringTable">The string table.</param>
-	/// <param name="dataCollector">The data collector.</param>
-	public MessageBoxHandler(ITemplateFactory templateFactory, IStringTable stringTable, IDataCollector dataCollector)
-	{
-		_templateFactory = templateFactory;
-		_stringTable = stringTable;
-		_dataCollector = dataCollector;
-	}
 
 	/// <summary>
 	/// Generate message box HTML and set to data collector
@@ -68,15 +58,18 @@ public sealed class MessageBoxHandler : IMessageBoxHandler
 			case MessageBoxStatus.Ok:
 				templateFile += "OkMessageBox.tpl";
 				break;
+
+			default:
+				throw new ArgumentOutOfRangeException(nameof(status), status, null);
 		}
 
-		var tpl = _templateFactory.Load(templateFile);
+		var tpl = templateFactory.Load(templateFile);
 
 		tpl.Set("Message", text);
-		tpl.Set("Title", string.IsNullOrEmpty(title) ? _stringTable.GetItem("FormTitleMessageBox") : title);
+		tpl.Set("Title", string.IsNullOrEmpty(title) ? stringTable.GetItem("FormTitleMessageBox") : title);
 
-		_dataCollector.Add(tpl.Get());
-		_dataCollector.AddTitle(string.IsNullOrEmpty(title) ? _stringTable.GetItem("FormTitleMessageBox") : title);
+		dataCollector.Add(tpl.Get());
+		dataCollector.AddTitle(string.IsNullOrEmpty(title) ? stringTable.GetItem("FormTitleMessageBox") : title);
 	}
 
 	/// <summary>
@@ -86,7 +79,7 @@ public sealed class MessageBoxHandler : IMessageBoxHandler
 	/// <param name="status">Status of a message box</param>
 	/// <param name="title">Title of a message box</param>
 	public void ShowSt(string stringTableItemName, MessageBoxStatus status = MessageBoxStatus.Error, string? title = null) =>
-		Show(_stringTable.GetItem(stringTableItemName), status, title);
+		Show(stringTable.GetItem(stringTableItemName), status, title);
 
 	/// <summary>
 	/// Get inline message box HTML
@@ -114,9 +107,12 @@ public sealed class MessageBoxHandler : IMessageBoxHandler
 			case MessageBoxStatus.Ok:
 				templateFile += "InlineOkMessageBox.tpl";
 				break;
+
+			default:
+				throw new ArgumentOutOfRangeException(nameof(status), status, null);
 		}
 
-		var tpl = _templateFactory.Load(templateFile);
+		var tpl = templateFactory.Load(templateFile);
 
 		tpl.Set("Message", text);
 
@@ -130,5 +126,5 @@ public sealed class MessageBoxHandler : IMessageBoxHandler
 	/// <param name="status">Status of a message box</param>
 	/// <returns>Message box html</returns>
 	public string GetInlineSt(string stringTableItemName, MessageBoxStatus status = MessageBoxStatus.Error) =>
-		GetInline(_stringTable.GetItem(stringTableItemName), status);
+		GetInline(stringTable.GetItem(stringTableItemName), status);
 }

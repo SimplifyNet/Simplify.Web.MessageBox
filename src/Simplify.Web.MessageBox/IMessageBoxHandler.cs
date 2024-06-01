@@ -3,7 +3,7 @@
 namespace Simplify.Web.MessageBox;
 
 /// <summary>
-/// The HTML message box
+/// Represents am HTML message box.
 /// Usable template files:
 /// "Simplify.Web/MessageBox/InfoMessageBox.tpl"
 /// "Simplify.Web/MessageBox/ErrorMessageBox.tpl"

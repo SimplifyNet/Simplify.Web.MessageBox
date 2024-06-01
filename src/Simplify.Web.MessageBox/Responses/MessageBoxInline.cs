@@ -3,16 +3,16 @@
 namespace Simplify.Web.MessageBox.Responses;
 
 /// <summary>
-/// Provides inline message box response (generate inline message box and sends it to the user only, without site generation)
+/// Provides inline message box response (generate inline message box and sends it to the user only, without site generation).
 /// </summary>
+/// <seealso cref="ControllerResponse" />
 /// <remarks>
-/// Initializes a new instance of the <see cref="Web.MessageBox.Responses.MessageBox"/> class.
+/// Initializes a new instance of the <see cref="Web.MessageBox.Responses.MessageBox" /> class.
 /// </remarks>
 /// <param name="text">The message box text.</param>
 /// <param name="status">The message box status.</param>
 public class MessageBoxInline(string text, MessageBoxStatus status = MessageBoxStatus.Error) : ControllerResponse
 {
-
 	/// <summary>
 	/// Gets the text.
 	/// </summary>
