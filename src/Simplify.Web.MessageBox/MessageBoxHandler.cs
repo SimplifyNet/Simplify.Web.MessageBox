@@ -45,23 +45,13 @@ public sealed class MessageBoxHandler(ITemplateFactory templateFactory, IStringT
 
 		var templateFile = MessageBoxTemplatesPath;
 
-		switch (status)
+		templateFile += status switch
 		{
-			case MessageBoxStatus.Information:
-				templateFile += "InfoMessageBox.tpl";
-				break;
-
-			case MessageBoxStatus.Error:
-				templateFile += "ErrorMessageBox.tpl";
-				break;
-
-			case MessageBoxStatus.Ok:
-				templateFile += "OkMessageBox.tpl";
-				break;
-
-			default:
-				throw new ArgumentOutOfRangeException(nameof(status), status, null);
-		}
+			MessageBoxStatus.Information => "InfoMessageBox.tpl",
+			MessageBoxStatus.Error => "ErrorMessageBox.tpl",
+			MessageBoxStatus.Ok => "OkMessageBox.tpl",
+			_ => throw new ArgumentOutOfRangeException(nameof(status), status, null)
+		};
 
 		var tpl = templateFactory.Load(templateFile);
 
@@ -94,23 +84,13 @@ public sealed class MessageBoxHandler(ITemplateFactory templateFactory, IStringT
 
 		var templateFile = MessageBoxTemplatesPath;
 
-		switch (status)
+		templateFile += status switch
 		{
-			case MessageBoxStatus.Information:
-				templateFile += "InlineInfoMessageBox.tpl";
-				break;
-
-			case MessageBoxStatus.Error:
-				templateFile += "InlineErrorMessageBox.tpl";
-				break;
-
-			case MessageBoxStatus.Ok:
-				templateFile += "InlineOkMessageBox.tpl";
-				break;
-
-			default:
-				throw new ArgumentOutOfRangeException(nameof(status), status, null);
-		}
+			MessageBoxStatus.Information => "InlineInfoMessageBox.tpl",
+			MessageBoxStatus.Error => "InlineErrorMessageBox.tpl",
+			MessageBoxStatus.Ok => "InlineOkMessageBox.tpl",
+			_ => throw new ArgumentOutOfRangeException(nameof(status), status, null)
+		};
 
 		var tpl = templateFactory.Load(templateFile);
 
