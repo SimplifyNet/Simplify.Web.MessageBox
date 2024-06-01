@@ -68,10 +68,9 @@ public class MessageBox : ControllerResponse
 	public string? Title { get; }
 
 	/// <summary>
-	/// Processes this response
+	/// Executes this response asynchronously.
 	/// </summary>
-	/// <returns></returns>
-	public override Task<ControllerResponseResult> Process()
+	public override Task<ResponseBehavior> ExecuteAsync()
 	{
 		Context.Response.StatusCode = StatusCode;
 
@@ -79,6 +78,6 @@ public class MessageBox : ControllerResponse
 
 		handler.Show(Text, Status, Title);
 
-		return Task.FromResult(ControllerResponseResult.Default);
+		return Task.FromResult(ResponseBehavior.Default);
 	}
 }

@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.5.0] - Unreleased
+
+### Dependencies
+
+- Simplify.Web bump to 5.0
+
+### Removed
+
+- .NET 4.8 explicit support
+
 ## [1.4.6] - 2023-08-21
 
 ### Removed

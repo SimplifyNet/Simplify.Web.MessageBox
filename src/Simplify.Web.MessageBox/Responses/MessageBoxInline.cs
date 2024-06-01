@@ -5,18 +5,13 @@ namespace Simplify.Web.MessageBox.Responses;
 /// <summary>
 /// Provides inline message box response (generate inline message box and sends it to the user only, without site generation)
 /// </summary>
-public class MessageBoxInline : ControllerResponse
+/// <remarks>
+/// Initializes a new instance of the <see cref="Web.MessageBox.Responses.MessageBox"/> class.
+/// </remarks>
+/// <param name="text">The message box text.</param>
+/// <param name="status">The message box status.</param>
+public class MessageBoxInline(string text, MessageBoxStatus status = MessageBoxStatus.Error) : ControllerResponse
 {
-	/// <summary>
-	/// Initializes a new instance of the <see cref="Web.MessageBox.Responses.MessageBox"/> class.
-	/// </summary>
-	/// <param name="text">The message box text.</param>
-	/// <param name="status">The message box status.</param>
-	public MessageBoxInline(string text, MessageBoxStatus status = MessageBoxStatus.Error)
-	{
-		Text = text;
-		Status = status;
-	}
 
 	/// <summary>
 	/// Gets the text.
@@ -24,7 +19,7 @@ public class MessageBoxInline : ControllerResponse
 	/// <value>
 	/// The text.
 	/// </value>
-	public string Text { get; }
+	public string Text { get; } = text;
 
 	/// <summary>
 	/// Gets the status.
@@ -32,18 +27,17 @@ public class MessageBoxInline : ControllerResponse
 	/// <value>
 	/// The status.
 	/// </value>
-	public MessageBoxStatus Status { get; }
+	public MessageBoxStatus Status { get; } = status;
 
 	/// <summary>
-	/// Processes this response
+	/// Executes this response asynchronously.
 	/// </summary>
-	/// <returns></returns>
-	public override async Task<ControllerResponseResult> Process()
+	public override async Task<ResponseBehavior> ExecuteAsync()
 	{
 		var handler = new MessageBoxHandler(TemplateFactory, StringTableManager, DataCollector);
 
-		await ResponseWriter.WriteAsync(handler.GetInline(Text, Status), Context.Response);
+		await ResponseWriter.WriteAsync(Context.Response, handler.GetInline(Text, Status));
 
-		return ControllerResponseResult.RawOutput;
+		return ResponseBehavior.RawOutput;
 	}
 }
